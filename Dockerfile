@@ -11,8 +11,8 @@ WORKDIR $APP_HOME
 COPY . ./
 
 # Download the key.json file using wget
-#RUN apt-get update && apt-get install -y wget
-#RUN wget $JSON_KEY
+RUN apt-get update && apt-get install -y wget
+RUN wget $JSON_KEY
 
 # Allow statements and log messages to immediately appear in the logs
 ENV PYTHONUNBUFFERED True
