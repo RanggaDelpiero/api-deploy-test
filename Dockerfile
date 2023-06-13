@@ -30,5 +30,5 @@ COPY . .
 ARG KEY_JSON
 ENV KEY_JSON=$KEY_JSON
 
-ENV PORT 5000
+ENV PORT 3000
 CMD exec gunicorn --bind :$PORT main:app --workers 1 --threads 1 --timeout 60
